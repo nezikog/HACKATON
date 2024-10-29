@@ -94,6 +94,10 @@ body{
     box-shadow: 3px 3px 2px 1px rgba(137,184,255, 75%);
 }
 
+.red{
+    border: 2px solid rgb(255,0,0);
+}
+
 .circle{
     background-color: rgb(0, 129, 0);
     border-radius: 45em;
