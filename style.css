@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: "Rubik";
@@ -6,119 +6,116 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-p{
+p {
     font-size: 40px;
 }
 
-li::marker{
+li::marker {
     font-size: 40px;
 }
 
 @keyframes loader-spin {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
     100% {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
-  @keyframes checkmark {
+}
+
+@keyframes checkmark {
     0% {
-      width: 50px;
-      height: 50px;
-      opacity: 100%;
+        width: 50px;
+        height: 50px;
+        opacity: 100%;
     }
-    50%{
-      width: 25px;
-      height: 25px;
-      opacity: 50%;
+
+    50% {
+        width: 25px;
+        height: 25px;
+        opacity: 50%;
     }
+
     100% {
-      width: 50px;
-      height: 50px;
-      opacity: 100%;
+        width: 50px;
+        height: 50px;
+        opacity: 100%;
     }
-  }
+}
 
-body{
+/* body {
     overflow: hidden;
-    
-}
 
-.content{
+} */
+
+.content {
     display: flex;
 }
 
-.menu{
-    width: 1379px;
-    height: 1080px;
-    background-color: rgb(255,255,255);
-}
-
-.sideGlideR{
-    width: 268px;
-    height: 1080px;
-    background-color: rgb(137,184,255);
-    background-image: url(/img/logo.png);
-    background-size: 40%;
-}
-
-.sideGlideL{
-    width: 268px;
-    height: 1080px;
-    background-color: rgb(137,184,255);
-    background-image: url(/img/logo.png);
-    background-size: 40%;
-}
-
-.fr{
+.menu {
+    width: 80%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
     display: flex;
+    align-items: center;
+    flex-direction: column;
     justify-content: center;
 }
 
-.sing-in{
+.sideGlideR {
+    width: 10%;
+    height: 100vh;
+    background-color: rgb(137, 184, 255);
+    background-image: url(/img/logo.png);
+    background-size: 40%;
+}
+
+.sideGlideL {
+    width: 10%;
+    height: 100vh;
+    background-color: rgb(137, 184, 255);
+    background-image: url(/img/logo.png);
+    background-size: 40%;
+}
+
+
+.sing-in {
     border: 2px solid rgba(0, 0, 0, 0.5);
     width: 800px;
     height: 200px;
     border-radius: 0.5em;
-    margin-top: 70px
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.name{
+.name {
     padding: 20px;
     border-radius: 5px;
-    position: relative;
-    top: 70px;
-    right: -90px;
-    margin-right: 170px;
     box-shadow: 3px 3px 2px 1px rgba(2, 209, 159, 75%);
 }
 
-.surname{
+.surname {
     padding: 20px;
     border-radius: 5px;
-    position: relative;
-    top: 70px;
-    right: -90px;
-    box-shadow: 3px 3px 2px 1px rgba(137,184,255, 75%);
+    box-shadow: 3px 3px 2px 1px rgba(137, 184, 255, 75%);
 }
 
-.red{
-    border: 2px solid rgb(255,0,0);
+.red {
+    border: 2px solid rgb(255, 0, 0);
+    box-shadow: 3px 3px 2px 1px rgba(255, 0, 0, 75%);
 }
 
-.circle{
-    background-color: rgb(0, 129, 0);
+.circle {
+    background-color: rgb(24, 195, 24);
     border-radius: 45em;
     width: 70px;
     height: 70px;
-    position: relative;
-    top: 8px;
-    left: 356px;
     cursor: pointer;
 }
 
-.verifed{
+.verifed {
     width: 50px;
     height: 50px;
     margin-left: 10px;
@@ -126,189 +123,127 @@ body{
     cursor: pointer;
 }
 
-.circle:hover{
+.circle:hover {
     animation-name: loader-spin;
     animation-duration: 1s;
 }
 
-.sing-in-txt{
+.sing-in-txt {
     text-align: center;
     margin-top: 15px;
 }
 
 /* DIARY */
 
-header{
-    display: flex;
-
-}
-
-.avatar{
+.avatar {
     width: 170px;
     height: 170px;
-    border-radius: 1em;
-    background-color: rgb(226,226,226);
-    margin-left: 120px;
-    margin-top: 70px;
+    border-radius: 3em;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgba(0, 0, 0, 85%);
+    margin: 0 auto;
+    background-image: url(./img/avatar.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
-.ini{
-    margin-top: 95px;
-    margin-left: 8px;
-    letter-spacing: 7.5px;
-}
-
-.nameD{
+.nameD {
     font-size: 24px;
     text-decoration: underline;
-    margin-bottom: 55px;
+    display: inline-block;
 }
-.surnameD{
+
+.surnameD {
     font-size: 24px;
     text-decoration: underline;
+    display: inline-block;
+    margin-left: 5px;
 }
 
-.toggler{
-      z-index:2;
-      height: 50px;
-      width: 50px;
-      position: absolute;
-      top: 25px;
-      left: 1920px;
-      cursor: pointer;
-      opacity: 0;
-  }
-
-  label .menu {
-    position: absolute;
-    right: -100px;
-    top: -100px;
-    z-index: 100;
-    width: 200px;
-    height: 200px;
-    background: #FFF;
-    border-radius: 50% 50% 50% 50%;
-    -webkit-transition: .5s ease-in-out;
-    transition: .5s ease-in-out;
-    box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
-    cursor: pointer;
-    
-  }
-  
-  label .hamburger {
-    position: absolute;
-    top: 135px;
-    left: 50px;
-    width: 30px;
-    height: 2px;
-    background: #69D2e7;
-    display: block;
-    -webkit-transform-origin: center;
-    transform-origin: center;
-    -webkit-transition: .5s ease-in-out;
-    transition: .5s ease-in-out;
-  }
-  
-  label .hamburger:after, label .hamburger:before {
-    -webkit-transition: .5s ease-in-out;
-    transition: .5s ease-in-out;
-    content: "";
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: #69d2e7;
-  }
-  
-  label .hamburger:before { top: -10px; }
-  
-  label .hamburger:after { bottom: -10px; }
-  
-  label input { display: none; }
-  
-  label input:checked + .menu {
-    box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
-    border-radius: 0;
-    
-  }
-  
-  label input:checked + .menu .hamburger {
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-    
-  }
-  
-  label input:checked + .menu .hamburger:after {
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
-    bottom: 0;
-    
-  }
-  
-  label input:checked + .menu .hamburger:before {
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
-    top: 0;
-    
-  }
-  
-  label input:checked + .menu + ul { opacity: 1; }
-  
-  label ul {
-    z-index: 200;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    -webkit-transition: .25s 0s ease-in-out;
-    transition: .25s 0s ease-in-out;
-  }
-  
-  label a {
-    margin-bottom: 1em;
-    display: block;
-    color: #f38630;
-    text-decoration: none;
-  }  
-
-.contentDR{
+.contentDR {
     display: flex;
     align-items: flex-end;
 }
 
-.less{
+.less {
     position: relative;
     left: -115px;
 }
 
-.lessons{
+.lessons {
     margin-bottom: 10px;
     text-decoration: underline;
-    
+
 }
-.disc{
+
+.disc {
     margin-top: 10px;
 }
 
-.time{
+.time {
     position: relative;
     left: 95px;
 }
 
-.times{
+.times {
     margin-top: 10px;
     text-decoration: underline;
 }
 
-.borderMarksOfLab{
-    width: 400px;
-    height: 500px;
-    background-color: rgba(2, 209, 159, 75%);
+.markHolder {
+    width: 330px;
+    height: 50px;
 }
-.LabOfMarks{
-    width: 300px;
-    height: 400px;
-    background-color: rgba(137, 184, 255, 75%);
+
+.mark {
+    font-size: 16px;
+}
+
+#balance {
+    font-size: 16px;
+}
+
+.sup {
+    font-size: 18px;
+}
+
+#dream {
+    font-size: 15px;
+}
+
+.offcanvas-backdrop.show {
+    opacity: 0 !important;
+}
+
+.gr {
+    display: grid;
+    grid-template-areas: "a d""a c""a b";
+    gap: 5px;
+    justify-items: center;
+    justify-content: space-evenly;
+    margin-top: 60px;
+}
+
+.card3 {
+    grid-area: a;
+}
+
+.card2 {
+    grid-area: b;
+}
+
+.card1 {
+    grid-area: c;
+}
+
+.card0 {
+    grid-area: d;
+}
+
+.logoOfGham {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translate(50%);
+    height: 100px;
 }
