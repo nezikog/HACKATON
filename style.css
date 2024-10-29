@@ -67,7 +67,7 @@ li::marker {
     width: 10%;
     height: 100vh;
     background-color: rgb(137, 184, 255);
-    background-image: url(/img/logo.png);
+    background-image: url(./img/logo.png);
     background-size: 40%;
 }
 
@@ -75,7 +75,7 @@ li::marker {
     width: 10%;
     height: 100vh;
     background-color: rgb(137, 184, 255);
-    background-image: url(/img/logo.png);
+    background-image: url(./img/logo.png);
     background-size: 40%;
 }
 
