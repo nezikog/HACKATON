@@ -1,52 +1,49 @@
-let Name = "Кирилл";
-let SurName = "Шумаков";
+<!DOCTYPE html>
+<html lang="en">
 
-let lesson0 = "C#"
-let lesson1 = "Html, Css, Js"
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Твой Рубикон</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="favicon" type="image/x-icon" href="./img/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
 
-let time0 = "10.00 до 11.30"
-let time1 = "11.45 до 12.00"
+<body>
+    <div class="content">
+        <div class="sideGlideL"></div>
+        <div class="menu">
+            <div class="fr">
+                <form class="sing-in">
+                    <input id="inputN" class="name" placeholder="Ваше имя..." type="text">
+                    <input id="inputSN" class="surname" placeholder="Ваша фамилия..." type="text">
+                    <div class="verifySys">
+                        <div onclick="SingUp()" class="circle">
+                            <img class="verifed" src="./img/verify.png" alt="">
+                        </div>
+                    </div>
+                </form>
 
-function SingUp(){ 
-    let inputN = document.getElementById("inputN");
-    let inputNS = document.getElementById("inputSN");
+            </div>
+            <h1 class="sing-in-txt">Вход в систему</h1>
+        </div>
 
-    if(inputN.value == Name && inputNS.value == SurName){
-        window.location.href = "diary.html";
-        inputN.classList.remove("red");
-        inputNS.classList.remove("red");
-    }
-    else{
-        alert("Данные введены неккоректно! Попробуйте снова!")
-        inputN.classList.add("red");
-        inputNS.classList.add("red");  
-    }
-}
+        <div class="sideGlideR"></div>
 
-function initials(){
-    let nameTxt = document.getElementById("name")
-    let surnameTxt = document.getElementById("surname")
+    </div>
 
-    nameTxt.textContent = Name
-    surnameTxt.textContent = SurName
-}
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
 
-function Lessons(){
-    let Less0 = document.getElementById("en0")
-    let Less1 = document.getElementById("en1")
-    
-    Less0.textContent = lesson0
-    Less1.textContent = lesson1
-}
-
-function Time(){
-    let Less0 = document.getElementById("enn0")
-    let Less1 = document.getElementById("enn1")
-    
-    Less0.textContent = lesson0 + " " +time0
-    Less1.textContent = lesson1 + " " +time1
-}
-
-Time();
-Lessons();
-initials();
+</html>
