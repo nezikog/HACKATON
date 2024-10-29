@@ -7,7 +7,7 @@ function SingUp(){
     let inputNS = document.getElementById("inputSN");
 
     if(inputN.value == Name && inputNS.value == SurName){
-        console.log("Verify");
+        window.location.href = "diary.html";
         inputN.classList.remove("red");
         inputNS.classList.remove("red");
     }
@@ -17,3 +17,16 @@ function SingUp(){
         inputNS.classList.add("red");  
     }
 }
+
+function initials(){
+    let Name = "Кирилл";
+    let SurName = "Шумаков";
+    
+    let nameTxt = document.getElementById("name")
+    let surnameTxt = document.getElementById("surname")
+
+    nameTxt.textContent = Name
+    surnameTxt.textContent = SurName
+}
+
+initials();
