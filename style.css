@@ -6,6 +6,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
+p{
+    font-size: 40px;
+}
+
+li::marker{
+    font-size: 40px;
+}
+
 @keyframes loader-spin {
     0% {
       transform: rotate(0deg);
@@ -265,3 +273,32 @@ header{
     color: #f38630;
     text-decoration: none;
   }  
+
+.contentDR{
+    display: flex;
+    align-items: flex-end;
+}
+
+.less{
+    position: relative;
+    left: -115px;
+}
+
+.lessons{
+    margin-bottom: 10px;
+    text-decoration: underline;
+    
+}
+.disc{
+    margin-top: 10px;
+}
+
+.time{
+    position: relative;
+    left: 95px;
+}
+
+.times{
+    margin-top: 10px;
+    text-decoration: underline;
+}
