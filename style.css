@@ -153,15 +153,15 @@ header{
 }
 
 .ini{
-    margin-top: 75px;
-    margin-left: 90px;
+    margin-top: 95px;
+    margin-left: 8px;
     letter-spacing: 7.5px;
 }
 
 .nameD{
     font-size: 24px;
     text-decoration: underline;
-    margin-bottom: 100px;
+    margin-bottom: 55px;
 }
 .surnameD{
     font-size: 24px;
@@ -169,7 +169,6 @@ header{
 }
 
 .toggler{
-    /* ALWAYS KEEPING THE TOGGLER OR THE CHECKBOX ON TOP OF EVERYTHING :  */
       z-index:2;
       height: 50px;
       width: 50px;
