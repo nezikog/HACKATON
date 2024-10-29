@@ -1,0 +1,33 @@
+@media screen and (max-width: 767px) {
+    .gr {
+        grid-template-areas: "a""b""c""d";
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .sing-in {
+        width: 600px;
+        height: 250px;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .sing-in {
+        width: 310px;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .sing-in {
+        width: 260px;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .sing-in {
+        border: none;
+    }
+}
