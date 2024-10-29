@@ -3,35 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Твой Рубикон</title>
+    <title>Дневник</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="favicon" type="image/x-icon" href="./img/favicon.ico">
 </head>
 <body>
-<div class="content">
-    <div class="sideGlideL"></div>
-
-    <div class="menu">
-        <div class="fr">
-            <form class="sing-in">
-                <input class="name" placeholder="Ваше имя..." type="text">
-                <input class="surname" placeholder="Ваша фамилия..." type="text">
-
-                <div class="verifySys">
-                    <div class="circle">
-                        <img class="verifed" src="./img/verify.png" alt="">
-                    </div>
-                </div>
-            </form>
-            
-        </div>
-        <h1 class="sing-in-txt">Вход в систему</h1>
-    </div>
-
-    <div class="sideGlideR"></div>
-
     
-</div>
+    <header>
+        <div class="avatar"></div>
+        <div class="ini">
+            <h1 id="name" class="nameD"></h1>
+            <h1 id="surname" class="surnameD"></h1>
+        </div>
+        <label>
+            <input type="checkbox">
+            <span class="menu"> <span class="hamburger"></span> </span>
+            <ul>
+              <li><p id="en" class="disc"></p></li>
+              <li><p id="en" class="disc"></p></li>
+              <li><p id="en" class="disc"></p></li>
+            </ul>
+            </label>
+
+    </header>
 
     <script src="./index.js"></script>
 </body>
